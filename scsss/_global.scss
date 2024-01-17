@@ -106,3 +106,20 @@ a {
     }
 
 }
+
+button,
+.button {
+    position: relative;
+    display: inline-block;
+    padding: 13px 35px;
+    white-space: nowrap;
+    background-image: linear-gradient(to right, $limeGreen,$brightCyan);
+    border-radius: 50px;
+    color: $white;
+    font-weight: 400;
+    font-size: $font-sm;
+    transition: ease-in-out 0.4s;
+    &:hover {
+        opacity: 0.7;
+    }
+}
