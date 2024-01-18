@@ -2,86 +2,228 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=, initial-scale=1.0" />
-    <title>Easy-Bank-SCSS</title>
-    <link rel="stylesheet" href="scsss/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css" />
+         <!-- fontawesome-cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <!-- header -->
     <header class="header">
-      <div class="overlay">
-        <nav class="container container--pall flex flex--jc-sb flex--ai-c">
-          <a href="" class="header__logo">
-            <img src="images/logo.svg" alt="" />
-          </a>
+      <nav class="container container--pall flex flex-jc-sb flex-ai-c">
+        <a href="" class="header__logo">
+          <img src="./images/logo.svg" alt="" />
+        </a>
 
-          <div class="header__links">
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Contact</a>
-            <a href="">Blog</a>
-            <a href="">Careers</a>
-          </div>
+        <div class="header__menu">
+          <a href="">Home</a>
+          <a href="">About</a>
+          <a href="">Contact</a>
+          <a href="">Blog</a>
+          <a href="">Careers</a>
+        </div>
 
-          <a href="" class="button header__cta">Request Invite</a>
-        </nav>
-      </div>
+        <a href="" class="button header__cta">Request Invite</a>
+        <div class="menuBtn"><i class="fa-solid fa-bars"></i></div>
+      </nav>
     </header>
-
-    <!-- hero-section -->
+<!-- hero-section -->
     <section class="hero">
       <div class="container">
         <div class="hero__image"></div>
-    <div class="hero__text container--pall">
-      <h1>Next generation digital banking!!!!</h1>
-      <p>Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.
-      </p>
-      <a href="" class="button">Request Invite</a>
-    </div>
-  </div>
-  </section>
-  <!-- feature-section -->
-  <section class="feature">
-    <div class="feature__content container container--pall">
-      <div class="feature__intro">
-      <h2>Why choose Easybank?</h2>
-      <p>We leverage open banking to turn your bank account into your finances like never before.</p>
-      <a href="" class="button">Request Invite</a>
-    </div>
-    <div class="feature__grid">
-      <div class="feature__item">
-        <div class="feature__icon">
-          <img src="images/icon-online.svg" alt="">
-          <div class="feature__title">Online Banking</div>
-          <div class="feature__description">Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world.</div>
-        </div>
-      </div>
-      <div class="feature__item">
-        <div class="feature__icon">
-          <img src="images/icon-onboarding.svg" alt="">
-          <div class="feature__title">Online Banking</div>
-          <div class="feature__description">Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world.</div>
-        </div>
-      </div>
-      <div class="feature__item">
-        <div class="feature__icon">
-          <img src="images/icon-api.svg" alt="">
-          <div class="feature__title">Online Banking</div>
-          <div class="feature__description">Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world.</div>
-        </div>
-      </div>
-      <div class="feature__item">
-        <div class="feature__icon">
-          <img src="images/icon-budgeting.svg" alt="">
-          <div class="feature__title">Online Banking</div>
-          <div class="feature__description">Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world.</div>
-        </div>
-      </div>
-    </div>
-    </div>
 
+        <div class="hero__text container--pall">
+          <h1>Next generation digital banking!!!!</h1>
+          <p>
+            Take your financial life online. Your Easybank account will be a
+            one-stop-shop for spending, saving, budgeting, investing, and much
+            more.
+          </p>
+          <a href="" class="button">Reques Invite</a>
+        </div>
+      </div>
+    </section>
+<!-- feature-section -->
+    <section class="feature">
+      <div class="feature__content container container--pall">
+        <div class="feature__intro">
+          <h2>Why choose Easybank?</h2>
+          <p>
+            We leverage Open Banking to turn your bank account into your
+            financial hub. Control your finances like never before.
+          </p>
+        </div>
 
+        <div class="feature__grid">
+          <div class="feature__item">
+            <div class="feature__icon">
+              <img src="./images/icon-online.svg" alt="" />
+            </div>
+            <div class="feature__title">Online Banking</div>
+            <div class="feature__description">
+              Our modern web and mobile applications allow you to keep track of
+              your finances wherever you are in the world.
+            </div>
+          </div>
+          <div class="feature__item">
+            <div class="feature__icon">
+              <img src="./images/icon-budgeting.svg" alt="" />
+            </div>
+            <div class="feature__title">Online Banking</div>
+            <div class="feature__description">
+              Our modern web and mobile applications allow you to keep track of
+              your finances wherever you are in the world.
+            </div>
+          </div>
+          <div class="feature__item">
+            <div class="feature__icon">
+              <img src="./images/icon-onboarding.svg" alt="" />
+            </div>
+            <div class="feature__title">Online Banking</div>
+            <div class="feature__description">
+              Our modern web and mobile applications allow you to keep track of
+              your finances wherever you are in the world.
+            </div>
+          </div>
+          <div class="feature__item">
+            <div class="feature__icon">
+              <img src="./images/icon-api.svg" alt="" />
+            </div>
+            <div class="feature__title">Online Banking</div>
+            <div class="feature__description">
+              Our modern web and mobile applications allow you to keep track of
+              your finances wherever you are in the world.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- articles-section -->
+    <section class="articles">
+      <div class="article__content container container--pall">
+        <h2>Latest Articles</h2>
+        <div class="article__grid">
+          <a href="#" class="article__item">
+            <div
+              class="article__image"
+              style="background-image: url('./images/image-currency.jpg')"
+            ></div>
+            <div class="article__text">
+              <div class="article__author">By Claire Robinson</div>
+              <div class="article__title">
+                Receive money in any currency with no fees
+              </div>
+              <div class="article__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                est cupiditate exercitationem aliquid error a autem natus ipsam
+                vel repellat!
+              </div>
+            </div>
+          </a>
+          <a href="#" class="article__item">
+            <div
+              class="article__image"
+              style="background-image: url('./images/image-restaurant.jpg')"
+            ></div>
+            <div class="article__text">
+              <div class="article__author">By Claire Robinson</div>
+              <div class="article__title">
+                Receive money in any currency with no fees
+              </div>
+              <div class="article__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                est cupiditate exercitationem aliquid error a autem natus ipsam
+                vel repellat!
+              </div>
+            </div>
+          </a>
+          <a href="#" class="article__item">
+            <div
+              class="article__image"
+              style="background-image: url('./images/image-plane.jpg')"
+            ></div>
+            <div class="article__text">
+              <div class="article__author">By Claire Robinson</div>
+              <div class="article__title">
+                Receive money in any currency with no fees
+              </div>
+              <div class="article__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                est cupiditate exercitationem aliquid error a autem natus ipsam
+                vel repellat!
+              </div>
+            </div>
+          </a>
+          <a href="#" class="article__item">
+            <div
+              class="article__image"
+              style="background-image: url('./images/image-confetti.jpg')"
+            ></div>
+            <div class="article__text">
+              <div class="article__author">By Claire Robinson</div>
+              <div class="article__title">
+                Receive money in any currency with no fees
+              </div>
+              <div class="article__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                est cupiditate exercitationem aliquid error a autem natus ipsam
+                vel repellat!
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+<!-- footer-section -->
+    <footer class="footer">
+      <div class="container">
+        <a href="" class="footer__logo"
+          ><img src="./images/logo-dark.svg" alt=""
+        /></a>
 
-  </section>
+        <div class="footer__social">
+          <a href="">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="">
+            <i class="fa-brands fa-pinterest"></i>
+          </a>
+          <a href="">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </div>
+
+        <div class="footer__links col1">
+          <a href="">About Us</a>
+          <a href=""> Contact</a>
+          <a href=""> Blog </a>
+        </div>
+        <div class="footer__links col2">
+          <a href="">Careers</a>
+          <a href=""> Support </a>
+          <a href=""> Privacy Policy </a>
+        </div>
+
+        <div class="footer__cta">
+          <a href="" class="button btnFooter">Request Invite</a>
+        </div>
+        <div class="footer__copyright">
+          &copy;EasyBank. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

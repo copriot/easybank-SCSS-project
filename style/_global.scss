@@ -1,0 +1,131 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Public Sans", sans-serif;
+  font-size: $font-sm;
+  font-weight: 300;
+  color: $grayishBlue;
+  line-height: 1.3;
+  overflow-x: hidden;
+
+  @include breakpoint-up(large) {
+    font-size: $font-med;
+  }
+}
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  line-height: 1.15;
+  color: $darkBlue;
+  margin-top: 0;
+}
+h1 {
+  font-size: 40px;
+  margin-bottom: 24px;
+
+  @include breakpoint-up(large) {
+    font-size: $font-xlg;
+  }
+}
+h2 {
+  font-size: 32px;
+  margin-bottom: 32px;
+  @include breakpoint-up(large) {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+}
+p {
+  line-height: 1.5;
+  margin-bottom: 36px;
+}
+
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+
+  &--pall {
+    padding-top: 70px;
+    padding-right: 24px;
+    padding-bottom: 70px;
+    padding-left: 24px;
+
+    @include breakpoint-up(large) {
+      padding-top: 96px;
+      padding-bottom: 96px;
+    }
+  }
+  &--py {
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    @include breakpoint-up(large) {
+      padding-top: 96px;
+      padding-bottom: 96px;
+    }
+  }
+  &--px {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+  &--pt {
+    padding-top: 96px;
+
+    @include breakpoint-up(large) {
+      padding-top: 96;
+    }
+  }
+  &--pr {
+    padding-right: 24px;
+  }
+  &--pb {
+    padding-bottom: 70px;
+
+    @include breakpoint-up(large) {
+      padding-bottom: 96px;
+    }
+  }
+  &--pl {
+    padding-left: 96px;
+  }
+}
+.flex {
+  display: flex;
+
+  &--jc-sb {
+    justify-content: space-between;
+  }
+  &--jc-c {
+    justify-content: center;
+  }
+  &--ai-c {
+    align-items: center;
+  }
+}
+button,
+.button {
+  position: relative;
+  display: inline-block;
+  padding: 13px 35px;
+  white-space: nowrap;
+  background-image: linear-gradient(to right, $limeGreen, $brightCyan);
+  border-radius: 50px;
+  color: $white;
+  font-weight: 400;
+  font-size: $font-sm;
+  opacity: 1;
+  &:hover {
+    transition: opacity 500ms ease-in-out;
+    opacity: 0.7;
+  }
+}

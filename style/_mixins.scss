@@ -3,7 +3,6 @@ $breakpoints-up: (
   "large": "64em",
   "xlarge": "87.5em",
 );
-
 $breakpoints-down: (
   "small": "39.9375em",
   "medium": "63.9375em",
@@ -18,10 +17,4 @@ $breakpoints-down: (
   @media (max-width: map-get($breakpoints-down,$size)) {
     @content;
   }
-}
-
-@mixin mobile-phone() {
-    @media (max-width: 400px) {
-        @content;
-    }
 }
